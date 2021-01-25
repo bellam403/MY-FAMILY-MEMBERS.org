@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>MY FAMILY</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+    <h1>My Family Book</h1>
+<img id="album" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnJxd-VfOplg5BwWXGg-2U2fRHnYsiFNrMGw&usqp=CAU">
+<p id="name">Family</p>
+<button type="button" onclick="nextslide()"> Next </button>
+</div>
+
+
+<script>
+    var reasons = [ 
+    "DAD", "MOM", "ME", "BRO" ]; 
+    var images = [ 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFGLFm8_QG5FYtnF81Kq6HIslPauTCiYAAhA&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEOCzZ98ySO9yGgkCv1oITt-wM0KiFcCZeRA&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2_i11Xy87WPtgsyol6krWmmaASi4MjexEGQ&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Wt1ZoHzw5NWt_VViUaA5Dg6gX5XpA59Sxw&usqp=CAU"
+    ];
+    var i = 0; 
+    function nextslide() { 
+    document.getElementById("name").innerHTML = reasons[i]; 
+    document.getElementById("album").src = images[i]; i++; }
+</script>
+</body>
+</html>
